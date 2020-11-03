@@ -91,3 +91,4 @@ if __name__ == '__main__':
 	arbitrage(graph, CURRENCIES)
 	cycles = eliminateSimilarCycles(cycles)
 	printCycles(cycles, CURRENCIES)
+

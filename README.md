@@ -6,4 +6,8 @@ This repository is my take on the arbitrage problem using the Bellman-Ford algor
 
 ---
 ## Note
-This code can be optimized a whole lot, there are a lot of unnecessary lines and loops that can be removed. Moreover, I still need to write error codes for when errors might occur. I would also like to add user input which is not an option with this code. Finally, the biggest issue is determining the path of the cycles. I have tried multiple ways but this is the only way I could find, I am sure there is a better way to find the path of the cycles. Also, I think that my implementation does not find all cycles in the graph, but only one which is an issue to be fixed. 
+This code can be optimized a whole lot, there are a lot of unnecessary lines and loops that can be removed. Moreover, I still need to write error codes for when errors might occur. I would also like to add user input which is not an option with this code. Finally, the biggest issue is determining the path of the cycles. I have tried multiple ways but this is the only way I could find, I am sure there is a better way to find the path of the cycles. Also, I think that my implementation does not find all cycles in the graph, but only one which is an issue to be fixed.
+
+---
+### Edit
+* 11/3/2020: I just did some more testing and it does not seem to be calculating the cycles properly. This is because I calculated the profit from two different cycles and both times I got 0.982 profit. I don't know if this is something with the accuracy of floating point numbers or it is getting the wrong path for a negative weight cycle.
